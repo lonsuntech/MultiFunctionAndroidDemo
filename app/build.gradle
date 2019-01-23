@@ -1,11 +1,10 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion '26.0.3'
+    compileSdkVersion 28
     defaultConfig {
         applicationId "com.umeng.soexample"
-        minSdkVersion 18
+        minSdkVersion 19
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
@@ -36,7 +35,7 @@ dependencies {
 //    compile project(':push')
     //compile files('libs/umeng-analytics-7.4.1.jar')
     //compile files('libs/umeng-common-1.4.2.jar')
-    compile project(':UMLibrary')
-    compile 'com.twitter.sdk.android:twitter-core:3.1.1'
-    compile 'com.twitter.sdk.android:tweet-composer:3.1.1'
+    api project(':UMLibrary')
+    implementation 'com.twitter.sdk.android:twitter-core:3.1.1'
+    implementation 'com.twitter.sdk.android:tweet-composer:3.1.1'
 }
